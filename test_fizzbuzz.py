@@ -3,32 +3,23 @@ from fizzbuzz import FizzBuzz
 
 
 class TestFizzBuzz(TestCase):
+    def setUp(self):
+        self.fizz_buzz = FizzBuzz()
+
     def test_input_1_should_return_1(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(1)
-        self.assertEqual('1', actual)
+        self.assertEqual('1', self.fizz_buzz.print_string(1))
 
     def test_input_2_should_return_2(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(2)
-        self.assertEqual('2', actual)
+        self.assertEqual('2', self.fizz_buzz.print_string(2))
 
     def test_input_3_should_return_Fizz(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(3)
-        self.assertEqual('Fizz', actual)
+        self.assertEqual('Fizz', self.fizz_buzz.print_string(3))
 
     def test_input_6_should_return_Fizz(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(6)
-        self.assertEqual('Fizz', actual)
+        self.assertEqual('Fizz', self.fizz_buzz.print_string(6))
 
     def test_input_5_should_return_Buzz(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(5)
-        self.assertEqual('Buzz', actual)
+        self.assertEqual('Buzz', self.fizz_buzz.print_string(5))
 
     def test_input_10_should_return_Buzz(self):
-        fizz_buzz = FizzBuzz()
-        actual = fizz_buzz.print_string(10)
-        self.assertEqual('Buzz', actual)
+        self.assertEqual('Buzz', self.fizz_buzz.print_string(10))
