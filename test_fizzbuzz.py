@@ -12,3 +12,8 @@ class TestFizzBuzz(TestCase):
         fizz_buzz = FizzBuzz()
         actual = fizz_buzz.print_string(2)
         self.assertEqual('2', actual)
+
+    def test_input_3_should_return_Fizz(self):
+        fizz_buzz = FizzBuzz()
+        actual = fizz_buzz.print_string(3)
+        self.assertEqual('Fizz', actual)
