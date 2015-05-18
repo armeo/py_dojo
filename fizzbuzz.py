@@ -1,6 +1,6 @@
 class FizzBuzz(object):
     def print_string(self, input):
-        if input == 15:
+        if input % 15 == 0:
             return 'FizzBuzz'
         elif input % 3 == 0:
             return 'Fizz'
