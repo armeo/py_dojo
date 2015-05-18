@@ -23,3 +23,6 @@ class TestFizzBuzz(TestCase):
 
     def test_input_10_should_return_Buzz(self):
         self.assertEqual('Buzz', self.fizz_buzz.print_string(10))
+
+    def test_input_15_should_return_FizzBuzz(self):
+        self.assertEqual('FizzBuzz', self.fizz_buzz.print_string(15))
